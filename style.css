@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -85,15 +84,15 @@ section.visible {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the entire row of images */
-    gap: 20px; /* Space between images */
-    align-items: center; /* Ensure vertical alignment is consistent */
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
 }
 
 .gallery img {
-    max-width: 300px; /* Adjust the size as desired */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure the image fits within its boundaries */
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -202,12 +201,12 @@ footer p {
 }
 
 /* About Section */
-.about .profile-photo {
+.about img {
     display: block;
     max-width: 200px;
     margin: 20px auto;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Remove Gallery Buttons */
