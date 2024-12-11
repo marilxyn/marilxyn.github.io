@@ -219,31 +219,41 @@ footer p {
     text-align: center;
 }
 
-/* Media Query for Mobile Devices */
+/* Media Query for Mobile */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+        align-items: center;
     }
 
     .nav-links {
-        flex-direction: column;
-        gap: 15px;
-        align-items: flex-start;
+        flex-direction: row;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        font-size: 0.9rem;
     }
 
     .contact .social-links {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
         align-items: center;
+        padding: 10px; 
     }
 
     .contact .social-links a {
-        font-size: 0.9rem;
-        padding: 10px;
-        width: 100%;
+        font-size: 0.85rem;
+        padding: 10px 20px;
+        border-radius: 5px;
+        width: auto;
         text-align: center;
+    }
+
+    body {
+        padding: 0 10px;
     }
 
     section {
