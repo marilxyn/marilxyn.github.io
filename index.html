@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marilyn Gable | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<!-- 
+        issues now: 
+white padding on left side of hero (affecting image)
+nav text color becomes invisible over certain sections
+project green and image photo are different heights
+hover mouse pointer not working
+no about page yet
+-->
+
+<body>
+
+  <header class="header-container">
+    <nav class="nav-wrapper">
+      <div class="nav-content">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">HOME</a></li>
+          <li><a href="#hero-section" class="nav-link">ABOUT</a></li>
+          <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+          <li><a href="#art" class="nav-link">DIGITAL ART HIGHLIGHTS</a></li>
+          <li><a href="#photo" class="nav-link">PHOTOGRAPHY HIGHLIGHTS</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+        <div class="logo-container">
+          <img src="images/marchivelogo.png" alt="Logo" class="logo-image" />
+        </div>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar-1"></div>
+      <div class="bar-2"></div>
+      <div class="bar-3"></div>
+      <ul class="mobile-menu">
+        <li><a href="#home" class="nav-link">HOME</a></li>
+        <li><a href="#hero-section" class="nav-link">ABOUT</a></li>
+        <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+        <li><a href="#art" class="nav-link">DIGITAL ART HIGHLIGHTS</a></li>
+        <li><a href="#photo" class="nav-link">PHOTOGRAPHY HIGHLIGHTS</a></li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <header class="hero-section" id="home">
+    <div class="hero-content">
+      <img src="images/green bg headshot.png" alt="Profile Image" class="hero-image" />
+      <div class="hero-description">
+        <div class="hero-text-container">
+          <p class="role-title">Web Designer & Developer</p>
+          <h1 class="hero-title">Hi, I'm Marilyn. Welcome to my portfolio.</h1>
+        </div>
+        <p class="hero-description-text">
+          As a creative professional, my goal is to establish myself in front-end
+          web development, web design, UX design, and graphic design by creating
+          visually engaging, user-friendly products.
+          <br />
+          <br />
+          Guided by my values of creativity, innovation, communication,
+          functionality, and adaptability, I aim to create meaningful connections
+          through impactful digital experiences.
+        </p>
+      </div>
+    </div>
+    <img src="images/mgsectiontransitioncrop.jpg" alt="Decorative divider" class="divider-image" />
+  </header>
+
+  <main>
+    <section class="projects-container" id="projects">
+      <div class="projects-wrapper">
+        <h1 class="projects-title">PROJECTS</h1>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-content green-bg">
+              <div class="content-wrapper">
+                <div class="text-content">
+                  <h2 class="project-heading">My Personal Portfolio</h2>
+                  <p class="project-description">
+                    View the steps taken to create py portfolio page (this website),
+                    from designing in Figma to developing in VSCode!
+                  </p>
+                </div>
+                <div class="view-project-btn">
+                  <a href="https://www.figma.com/design/7Wg2UmtIEAziqKPg0PgkA4/Marilyn-Gable-Portfolio-Website-Redesign?node-id=0-1&t=O6pIUzzvvF2GM1j2-1" target="_blank">VIEW PROJECT</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-image-container">
+              <img src="images/portfoliothumbnail.png" alt="Portfolio project preview" class="project-image" />
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-image-container">
+              <img src="images/marchive.png" alt="Marchive E-Commerce preview" class="project-image" />
+            </div>
+            <div class="project-content green-bg">
+              <div class="content-wrapper">
+                <div class="text-content">
+                  <h2 class="project-heading">MARCHIVE E-Commerce Prototype</h2>
+                  <p class="project-description">
+                    A Figma E-Commerce website mockup that specializes in selling
+                    archived clothing pieces, both desktop and mobile versions available.
+                  </p>
+                </div>
+                <div class="view-project-btn">
+                  <a href="https://www.figma.com/design/4ZyOx4RNxzphj8LL6U02iM/Marchive--E-Commerce-Platform?node-id=1-2&t=KiBTjZNDy22GDICg-1" target="_blank">VIEW PROJECT</a>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-content green-bg">
+              <div class="content-wrapper">
+                <div class="text-content">
+                  <h2 class="project-heading">Moodscapes: Mood Tracking App</h2>
+                  <p class="project-description">
+                    A mood tracker application mockup with added functionality and animations, built using Figma.
+                  </p>
+                </div>
+                <div class="view-project-btn">
+                  <a href="https://www.figma.com/proto/VtCPAXG3m6mnddEqBvSpFv/Moodscapes--Mood-Tracking-App?node-id=3-2&t=6ttisr7V4qJV33ue-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A2" target="_blank">VIEW PROJECT</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-image-container">
+              <img src="images/moodscapesthumbresized.png" alt="Moodscapes logo thumbnail" class="project-image" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="art-highlights-section" id="art">
+      <div class="art-highlights-container">
+        <h1 class="art-highlights-title">DIGITAL ART HIGHLIGHTS</h1>
+        <div class="gallery-wrapper">
+          <div class="gallery-scroll">
+            <img src="images/DigitalSelfPortrait.PNG" alt="Digital art portrait with green tones" class="gallery-image" />
+            <img src="images/PolySnake.PNG" alt="green snake digital illustration made entirely out of poly shapes" class="gallery-image">
+            <img src="images/wireframe1.PNG" alt="Wireframe figure in green" class="gallery-image" />
+            <img src="images/wireframe2.JPG" alt="wireframe" class="gallery-image">
+            <img src="images/wireframe3.JPG" alt="wireframe 3 piece" class="gallery-image">
+            <img src="images/cars.PNG" alt="a digital illustration of three cars in front of a gas station" class="gallery-image">
+            <img src="images/bunbot.JPG" alt="a bunny robot character digital illustration" class="gallery-image">
+            <img src="images/animalskull1.JPG" alt="a ram skull illustration" class="gallery-image">
+            <img src="images/animalskull2.jpg" alt="a deer skull illustration" class="gallery-image">
+            <img src="images/animalskull3.JPG" alt="a wolf skull illustration" class="gallery-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="art-highlights-section" id="photo">
+      <div class="art-highlights-container">
+        <h1 class="art-highlights-title">PHOTOGRAPHY HIGHLIGHTS</h1>
+        <div class="gallery-wrapper">
+          <div class="gallery-scroll">
+            <img src="images/vantage2.jpg" alt="" class="gallery-image">
+            <img src="images/trees.JPG" alt="" class="gallery-image">
+            <img src="images/oregoncoast.JPG" alt="" class="gallery-image">
+            <img src="images/vantage1.jpg" alt="" class="gallery-image">
+            <img src="images/maniastore.JPG" alt="" class="gallery-image">
+            <img src="images/framedbeach.jpeg" alt="" class="gallery-image">
+            <img src="images/northwesttruck.jpg" alt="" class="gallery-image">
+            <img src="images/landscape.jpeg" alt="" class="gallery-image">
+            <img src="images/mthoodrestroom.JPG" alt="" class="gallery-image">
+            <img src="images/train.JPG" alt="" class="gallery-image">
+            <img src="images/loaf.jpeg" alt="" class="gallery-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h1 class="contact-title">CONTACT ME</h1>
+        <p class="contact-description">
+          Let's connect! Click the links below to view my other pages and get in touch with me.
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/marilyngable" class="social-link">LinkedIn</a>
+          <a href="https://www.behance.net/marilyngable" class="social-link">Behance</a>
+          <a href="https://www.github.com/marilxyn" class="social-link">GitHub</a>
+          <a href="https://www.instagram.com/graphicsmar" class="social-link">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-spacer"></div>
+      <div class="footer-content">
+        <div class="footer-wrapper">
+          <img src="images/marchivelogo.png" alt="marchive logo" class="footer-logo" />
+          <nav class="footer-nav">
+            <a href="#top" class="nav-link">BACK TO TOP</a>
+            <a href="#about" class="nav-link">ABOUT</a>
+            <p class="copyright">© 2025 by MARILYN GABLE</p>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
