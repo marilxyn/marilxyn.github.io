@@ -1,4 +1,3 @@
-/* Base Styles */
 html {
   scroll-behavior: smooth;
 }
@@ -7,12 +6,11 @@ a {
   cursor: pointer;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   max-width: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
   font-family: "Inter", -apple-system, Roboto, Helvetica, sans-serif;
 }
 
@@ -29,6 +27,7 @@ img {
   align-items: center;
   position: fixed;
   overflow-x: hidden;
+  z-index: 10;
 }
 
 .nav-wrapper {
@@ -102,9 +101,9 @@ nav ul li:hover {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  width: 100%;
   overflow: hidden;
   width: auto;
+  position: relative;
 }
 
 .hero-content {
@@ -122,12 +121,13 @@ nav ul li:hover {
   object-position: left;
   max-width: 100%;
   width: auto;
-
+  z-index: 1;
 }
 
 .hero-description {
+  padding-top: 5%;
   min-width: 240px;
-  width: 600px;
+  width: 40%;
   max-width: 100%;
 }
 
@@ -731,7 +731,8 @@ nav ul li:hover {
 }
 
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   max-width: 100%;
   width: 100%;
@@ -754,19 +755,16 @@ html, body {
 @media (max-width: 1200px) {
   .nav-content {
     gap: 40px;
-    /* Reduce the gap from 150px */
   }
 
   .nav-menu {
     gap: 20px;
-    /* Reduce the gap from 42px */
   }
 }
 
 @media (max-width: 991px) {
   .hero-title {
     font-size: 36px;
-    /* Smaller font for medium screens */
   }
 
   .hero-description-text {
